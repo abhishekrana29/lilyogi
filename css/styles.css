@@ -1,0 +1,392 @@
+/*********HOME PAGE**********/
+.home-hero-section {
+  background: url("../assets/img/home-bg-2.svg") no-repeat right 45% top 0%;
+}
+.home-about-section {
+  position: relative;
+  color: var(--white);
+}
+.home-about-section .btn {
+  border: 1px solid var(--primary);
+  color: var(--white);
+}
+.home-about-section .impact-card--grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 18px;
+}
+.home-about-section .impact-card {
+  background: #4ba3c3;
+  border-radius: 10px;
+}
+.home-about-section .impact-card .number {
+  font-family: var(--font1);
+  font-size: 32px;
+  padding: 45px 0;
+}
+.home-about-section .number-plus:after {
+  content: "+";
+}
+.about__top-block {
+  position: absolute;
+  top: -25%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+}
+.about__top-block .about__top-text {
+  font-family: var(--font1);
+  color: #60993e;
+}
+.about__bottom-block {
+  position: absolute;
+  bottom: -35%;
+  right: 20px;
+}
+.about__bottom-block .about__bottom-text {
+  font-family: var(--font1);
+  transform: rotate(4deg);
+}
+.home-hero-section .main-img {
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 768px) {
+  .home-about-section .impact-card--grid {
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    grid-column-gap: 18px;
+    overflow: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .home-about-section {
+    background: var(--warning);
+  }
+}
+@media (min-width: 1200px) {
+  .home-about-section {
+    margin: 20rem 0 20rem 0 !important;
+  }
+  .home-about-section::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    background: url("../assets/img/home-about.svg") no-repeat top left;
+    top: -05%;
+    background-size: cover;
+  }
+  .home-about-section::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("../assets/img/home-about.svg") no-repeat bottom left;
+    bottom: -45%;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+.online-session-section .video-bg video {
+  border: 10px solid var(--secondary);
+  border-radius: 20px;
+}
+.yoga-benefits-section .yoga-benefits__title {
+  color: var(--primary);
+  font-family: var(--font1);
+}
+.banner-contact-section {
+  color: #fff !important;
+}
+.banner-contact-section .bg-success {
+  border-radius: 25px;
+}
+
+.meet-teachers-section .meet-teacher__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .meet-teachers-section .meet-teacher__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 20px;
+  }
+}
+.logo-items .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/****About us Page****/
+.about-background-section {
+  position: relative;
+  color: #fff;
+}
+.about-background-section .background__heading {
+  font-family: var(--font1);
+}
+.about-background-section .about-img {
+  border: 5px solid var(--secondary);
+  border-radius: 36px;
+}
+.row-1__top-img {
+  position: absolute;
+  top: -230px;
+  left: 40px;
+}
+.row-2__top-img {
+  position: relative;
+  bottom: 50px;
+  left: 30%;
+}
+.row-3__top-img {
+  position: relative;
+  top: -100px;
+  right: -15%;
+}
+.about-certificate-section .certificate-title {
+  font-weight: 600;
+  line-height: 24px;
+}
+.about-certificate-section .certificate_img-height {
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+}
+.about-certificate-section .certificate_img-height .certificate-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-teachers-section .our-teachers__card {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+  grid-column-gap: 10%;
+}
+.our-teachers-section .our-teachers__name {
+  font-family: var(--font1);
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.our-teachers-section .our-teachers__text {
+  line-height: 25px;
+}
+
+@media (max-width: 768px) {
+  .our-teachers-section .our-teachers__name {
+    margin-bottom: 05px;
+  }
+  .our-teachers-section .our-teachers__card {
+    grid-template-columns: 35% 60%;
+  }
+}
+
+.about-sub-section .about-background__img {
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/********MODALS DESIGN*******/
+.custom-modal .btn-close {
+  width: 3em;
+  height: 3em;
+  opacity: 1;
+  background: transparent;
+}
+.enjoy-free-trial-modal .modal-content {
+  border: 3px solid var(--primary);
+  border-radius: 30px;
+  box-shadow: 0 3px 5px rgba(0, 175, 240, 0.12) !important;
+}
+.register-modal .modal-content {
+  /* border: 2px solid white; */
+  border-radius: 20px;
+}
+.register-modal .modal-header {
+  border-bottom: 1px solid transparent;
+}
+.register-modal__form-fields form > div {
+  margin-bottom: 20px;
+}
+.register-modal__form-fields .form-control:focus {
+  background: transparent !important;
+  color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 175, 240, 0.12) !important;
+  border-bottom: 2px solid #fff !important;
+}
+
+.section-newsletter .bg-success {
+  border-radius: 20px;
+}
+
+.sitemap-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.sitemap-list ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.sitemap-list li {
+  position: relative;
+  padding-bottom: 20px;
+}
+.sitemap-list a {
+  color: #44526b;
+}
+.sitemap-list li::before {
+  position: absolute;
+  display: block;
+  content: "\2022";
+  text-indent: -999999px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/tick.svg");
+  background-size: 10px 10px;
+  left: -18px;
+  width: 10px;
+  height: 10px;
+  top: 8px;
+}
+
+/* .preloader {
+  position: absolute;
+  min-height: 100%;
+  background: var(--primary);
+  z-index: 100000;
+  top: 0px;
+  width: 100%;
+  color: white;   
+}
+.preloader img {
+    text-align: center;
+    padding-top: 100px;
+    
+} */
+.preloader {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 100000;
+}
+
+.preloader-image {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  z-index: 100;
+}
+#videolandPage {
+  position: absolute;
+  min-height: 100%;
+  background: var(--primary);
+  z-index: 10000;
+  top: 0px;
+  width: 100%;
+}
+html {
+  position: relative;
+}
+.add-video {
+  position: relative;
+  background: var(--primary);
+  height: 100vh;
+  overflow: hidden;
+}
+.remove-video #videolandPage {
+  width: 0% !important;
+}
+.yoga-day-modal {
+  text-align: center;
+}
+.yoga-day-modal .modal-header {
+  padding: 0 05px 0 0 !important;
+}
+.yoga-day-modal .modal-body {
+  padding: 0 0 05px 0 !important;
+}
+.yoga-day-modal .heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font1);
+  font-size: 15px;
+}
+
+.yoga-details-bg {
+  background-color: #fff7ea;
+  background-image: url("../assets/popup-bg.png");
+  background-size: cover;
+}
+
+.yoga-details-content .bg-black {
+  background: black;
+  color: #fff;
+  text-transform: uppercase;
+}
+.yoga-details-content .details-location {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.yoga-details-content .grid-details {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.yoga-details-content .grid-details h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font1);
+}
+
+@media (min-width: 1400px) {
+  .yoga-day-modal .heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .yoga-details-content .grid-details {
+    grid-template-columns: repeat(4, 20%);
+  }
+}
+
+.meet-teacher__card .rounded-img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border: 6px solid #ff8100;
+}
+.our-teachers__card .rounded-img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border: 6px solid #ff8100;
+}
+.iframe-video iframe {
+  margin: auto !important;
+}
+.mt-n5 {
+  margin-top: -3rem !important;
+}
+.shop-main-heading {
+  font-family: var(--font1);
+}
